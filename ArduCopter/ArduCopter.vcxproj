@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3189E148-D70A-4B18-8E7E-F9F7ACE79184}</ProjectGuid>
+    <RootNamespace>ArduCopter</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\ArduCopter;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Common;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Common\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Progmem;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Progmem\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Menu;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Menu\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Param;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Param\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\StorageManager;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\StorageManager\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_HAL;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_HAL\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_HAL_AVR;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_HAL_AVR\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_HAL_AVR_SITL;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_HAL_AVR_SITL\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_HAL_PX4;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_HAL_PX4\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_HAL_VRBRAIN;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_HAL_VRBRAIN\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_HAL_FLYMAPLE;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_HAL_FLYMAPLE\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_HAL_Linux;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_HAL_Linux\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_HAL_Empty;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_HAL_Empty\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\GCS_MAVLink;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\GCS_MAVLink\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_GPS;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_GPS\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\DataFlash;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\DataFlash\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_ADC;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_ADC\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_ADC_AnalogSource;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_ADC_AnalogSource\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Baro;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Baro\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Compass;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Compass\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Math;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Math\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Curve;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Curve\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_InertialSensor;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_InertialSensor\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_AHRS;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_AHRS\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_NavEKF;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_NavEKF\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Mission;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Mission\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Rally;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Rally\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AC_PID;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AC_PID\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AC_AttitudeControl;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AC_AttitudeControl\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\RC_Channel;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\RC_Channel\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Motors;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Motors\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_RangeFinder;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_RangeFinder\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_OpticalFlow;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_OpticalFlow\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\Filter;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\Filter\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Buffer;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Buffer\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Relay;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Relay\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_ServoRelayEvents;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_ServoRelayEvents\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Camera;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Camera\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Mount;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Mount\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Airspeed;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Airspeed\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Vehicle;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Vehicle\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_InertialNav;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_InertialNav\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AC_WPNav;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AC_WPNav\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Declination;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Declination\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AC_Fence;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AC_Fence\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\SITL;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\SITL\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Scheduler;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Scheduler\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_RCMapper;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_RCMapper\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Notify;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Notify\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_BattMonitor;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_BattMonitor\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_BoardConfig;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_BoardConfig\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Frsky_Telem;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Frsky_Telem\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AC_Sprayer;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AC_Sprayer\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_EPM;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_EPM\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Parachute;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Parachute\utility;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Terrain;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries\AP_Terrain\utility;G:\Program Files (x86)\ArduPilot-Arduino-1.0.3-windows\libraries;G:\Program Files (x86)\ArduPilot-Arduino-1.0.3-windows\hardware\apm\libraries;G:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers;D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\libraries;g:\program files (x86)\ardupilot-arduino-1.0.3-windows\hardware\tools\avr\avr\include\;g:\program files (x86)\ardupilot-arduino-1.0.3-windows\hardware\tools\avr\avr\include\avr\;g:\program files (x86)\ardupilot-arduino-1.0.3-windows\hardware\tools\avr\avr\;g:\program files (x86)\ardupilot-arduino-1.0.3-windows\hardware\tools\avr\lib\gcc\avr\4.3.2\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>D:\Visual Studio 2013\Projects\ardupilot-ArduCopter-3.2.1\ArduCopter\Visual Micro\.ArduCopter.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <PreprocessorDefinitions>__AVR_ATmega2560__;ARDUINO=101;ARDUINO_MAIN;__AVR__;__avr__;F_CPU=16000000L;__cplusplus;GCC_VERSION=40302;ARDUINO_ARCH_AVR;ARDUINO_AVR_APM2_2560HAL;CONFIG_HAL_BOARD=HAL_BOARD_APM2;EXCLUDECORE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="AP_State.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="ArduCopter.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="Attitude.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="commands.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="commands_logic.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="compassmot.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="compat.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="control_acro.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="control_althold.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="control_auto.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="control_autotune.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="control_circle.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="control_drift.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="control_flip.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="control_guided.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="control_land.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="control_loiter.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="control_obstavoid_manual.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="control_ofloiter.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="control_poshold.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="control_rtl.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="control_sport.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="control_stabilize.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="crash_check.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="ekf_check.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="events.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="failsafe.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="fence.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="flight_mode.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="GCS_Mavlink.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="heli.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="heli_control_acro.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="heli_control_stabilize.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="inertia.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="land_detector.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="leds.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="Log.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="motors.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="motor_test.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="navigation.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="Parameters.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="perf_info.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="position_vector.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="radio.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="sensors.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="setup.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="switches.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="system.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="test.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="UserCode.pde">
+      <FileType>CppCode</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="APM_Config.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="APM_Config_mavlink_hil.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="compat.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="config_channels.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="defines.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="heli.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="Parameters.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="UserVariables.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="Visual Micro\.ArduCopter.vsarduino.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\libraries\AP_RangeFinder\AP_RangeFinder_analog.cpp" />
+    <ClCompile Include="..\libraries\AP_RangeFinder\RangeFinder.cpp" />
+    <ClCompile Include="..\libraries\AP_RangeFinder\RangeFinder_Backend.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
